@@ -107,7 +107,7 @@ func main() {
 			fmt.Printf("Total expences: %d\n", sum)
 		case "delete":
 			if len(os.Args) != 3 {
-				fmt.Printf("Error: %v, use delete id\n", err)
+				fmt.Printf("Error: invalid number of arguments, use delete id\n")
 			} else {
 				id, err := strconv.Atoi(os.Args[2])
 				if err != nil {
