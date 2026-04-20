@@ -119,7 +119,7 @@ func main() {
 				if oldLen == len(data.Expenses) {
 					fmt.Printf("No expense with ID %d\n", id)
 				} else {
-					fmt.Printf("Expense deleted successfully\n")
+					fmt.Printf("Expense deleted successfully!\n")
 				}
 			}
 		}
