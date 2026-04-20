@@ -61,8 +61,8 @@ func add(s *storage, amount int, description string) {
 	exp.Amount = amount
 	exp.Description = description
 	s.Expenses = append(s.Expenses, exp)
-	s.Nextid++
 	fmt.Printf("Expense added successfully (ID: %d)\n", s.Nextid)
+	s.Nextid++
 }
 
 func delete(s *storage, id int) {
