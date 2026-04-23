@@ -131,6 +131,7 @@ func (s *storage) delete() {
 		fmt.Printf("Error: invalid number of arguments, use delete id\n")
 	} else {
 		id, err := strconv.Atoi(os.Args[2])
+
 		if err != nil {
 			fmt.Printf("Error: incorrect ID format, ID must be integer\n")
 		}
